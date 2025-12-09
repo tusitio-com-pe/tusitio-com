@@ -10,8 +10,6 @@ import Logoblanco from "./assets/imagenes/logoblanco.svg";
 
 function App() {
 
-function App() {
-
   useEffect(() => {
     const smoothScrollTo = (target, duration = 800) => {
       const start = window.pageYOffset;
@@ -50,9 +48,6 @@ function App() {
       });
     });
   }, []); 
-
-
-
 
     return () => {
       links.forEach(link => {
