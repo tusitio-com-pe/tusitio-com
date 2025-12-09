@@ -195,7 +195,7 @@ function App() {
       <footer className='footer'>
         <div className='footer-one'>
           <div className='footer-logo'>
-            <img src={Logo} alt="" />
+            <img src={Logoblanco} alt="" />
             <p>tusitio.com.pe</p>
           </div>
           <p>Planes y precios</p>
