@@ -1,6 +1,6 @@
 import './App.css';
 import Logo from "./assets/imagenes/LOGO.svg";
-import Portada from "./assets/imagenes/PORTADA 500x500.png";
+import Portada from "./assets/imagenes/portada.png";
 import Patas from "./assets/imagenes/SIEMPREPATAS.PE.png";
 import Nadef from "./assets/imagenes/NADEFSTUDIO.png";
 import Raquel from "./assets/imagenes/STILOSRAQUEL.png";
