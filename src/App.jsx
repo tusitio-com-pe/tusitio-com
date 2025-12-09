@@ -10,44 +10,47 @@ import Logoblanco from "./assets/imagenes/logoblanco.svg";
 
 function App() {
 
-useEffect(() => {
-  const smoothScrollTo = (target, duration = 800) => {
-    const start = window.pageYOffset;
-    const end = target.offsetTop;
-    const distance = end - start;
-    let startTime = null;
+function App() {
 
-    const ease = (t, b, c, d) => {
-      t /= d / 2;
-      if (t < 1) return (c / 2) * t * t + b;
-      t--;
-      return (-c / 2) * (t * (t - 2) - 1) + b;
+  useEffect(() => {
+    const smoothScrollTo = (target, duration = 800) => {
+      const start = window.pageYOffset;
+      const end = target.offsetTop;
+      const distance = end - start;
+      let startTime = null;
+
+      const ease = (t, b, c, d) => {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t + b;
+        t--;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
+      };
+
+      const animation = (currentTime) => {
+        if (!startTime) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = ease(timeElapsed, start, distance, duration);
+        window.scrollTo(0, run);
+
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+      };
+
+      requestAnimationFrame(animation);
     };
 
-    const animation = (currentTime) => {
-      if (!startTime) startTime = currentTime;
-      const timeElapsed = currentTime - startTime;
-      const run = ease(timeElapsed, start, distance, duration);
-      window.scrollTo(0, run);
+    const links = document.querySelectorAll('a[href^="#"]');
 
-      if (timeElapsed < duration) requestAnimationFrame(animation);
-    };
-
-    requestAnimationFrame(animation);
-  };
-
-  const links = document.querySelectorAll('a[href^="#"]');
-
-  links.forEach(link => {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute("href"));
-      if (target) {
-        smoothScrollTo(target, 1200); // velocidad
-      }
+    links.forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          smoothScrollTo(target, 1200);
+        }
+      });
     });
-  });
-}, []);
+  }, []); 
+
 
 
 
