@@ -37,7 +37,6 @@ function App() {
           <img src={Logo} alt="Logo tu sitio" />
           <p>tusitio.com.pe</p>
         </div>
-
         <nav className='links'>
           <ul>
             <li><a href="#planes">Plan</a></li>
