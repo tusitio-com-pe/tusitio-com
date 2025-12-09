@@ -16,10 +16,10 @@ function App() {
           <p>tusitio.com.pe</p>
         </div>
         <nav className='links'>
-          <li><a href='/'>Planes</a></li>
-          <li><a href='/'>Sobre nosotros</a></li>
-          <li><a href='/'>Nuestros Sitios</a></li>
-          <li className='link-black' ><a href='/'>Empieza ahora</a></li>
+          <li><a href="#planes">Plan</a></li>
+          <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+          <li><a href="#nuestros-sitios">Nuestros sitios</a></li>
+          <li className='link-black' ><a href="#planes">Empieza ahora</a></li>
         </nav>
       </header>
 
@@ -46,6 +46,8 @@ function App() {
         </div>
       </main>
 
+      <article className='about-service' id="sobre-nosotros">
+
       <article className='about-service'>
         <h2>¿Cómo brindamos precios accesibles?</h2>
         <div className='about-one'>
@@ -60,6 +62,8 @@ function App() {
           <p>Es un servicio que brindamos nosotros <br /> exclusivamente, consiste en brindar un Hosting <br /> ajustado al tamaño de una página en concreto.</p>
         </div>
       </article>
+
+      <section className='plan-details' id="planes">
 
       <section className='plan-details'>
         <h1>Nuestros planes</h1>
@@ -165,6 +169,8 @@ function App() {
           </div>
         </article>
       </section>
+
+      <article className='our-sites' id="nuestros-sitios">
 
       <article className='our-sides'>
         <h1 className='our-sides-title'>Nuestros sitios</h1>
