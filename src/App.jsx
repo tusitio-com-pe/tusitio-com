@@ -10,7 +10,6 @@ import Logoblanco from "./assets/imagenes/logoblanco.svg";
 
 function App() {
 
-  // ---- SCROLL SUAVE ----
   useEffect(() => {
     const links = document.querySelectorAll('a[href^="#"]');
 
