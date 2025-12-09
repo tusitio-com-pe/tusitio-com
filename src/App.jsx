@@ -47,8 +47,6 @@ function App() {
       </main>
 
       <article className='about-service' id="sobre-nosotros">
-
-      <article className='about-service'>
         <h2>¿Cómo brindamos precios accesibles?</h2>
         <div className='about-one'>
           <div className='sub-about-one'>
@@ -64,8 +62,6 @@ function App() {
       </article>
 
       <section className='plan-details' id="planes">
-
-      <section className='plan-details'>
         <h1>Nuestros planes</h1>
         <article className='details-container'>
           <div className='card-details-container'>
@@ -171,8 +167,6 @@ function App() {
       </section>
 
       <article className='our-sites' id="nuestros-sitios">
-
-      <article className='our-sides'>
         <h1 className='our-sides-title'>Nuestros sitios</h1>
         <div className='sides-cards-container'>
           <div className="side-example-card">
