@@ -49,12 +49,6 @@ function App() {
     });
   }, []); 
 
-    return () => {
-      links.forEach(link => {
-        link.removeEventListener("click", () => {});
-      });
-    };
-  }, []);
 
   return (
     <>
