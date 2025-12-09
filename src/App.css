@@ -19,7 +19,6 @@
 
 .header_main {
   background-color: #ffffff;
-  border: 1px solid gray;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -75,9 +74,6 @@ li {
   top: calc(50% - 250px);
   left: calc(50% - 227px);
 }
-/* .description-container p {
-  margin: 0;
-} */
 .text_one {
   background-color: white;
   color: black;

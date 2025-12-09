@@ -5,7 +5,7 @@ function App() {
     <>
       <header className='header_main'>
         <div className='container_logo'>
-          <img src="../src/assets/imagenes/LOGO.svg" alt="Logo tu sitio" />
+          <img src="../public/LOGO.svg" alt="Logo tu sitio" />
           <p>tusitio.com.pe</p>
         </div>
         <nav className='links'>
@@ -35,7 +35,7 @@ function App() {
         </div>
 
         <div className='big-image'>
-          <img src="../src/assets/imagenes/PORTADA 500x500.png" alt="imagen de portada" />
+          <img src="../public/PORTADA 500x500.png" alt="imagen de portada" />
         </div>
       </main>
 
@@ -163,22 +163,22 @@ function App() {
         <h1 className='our-sides-title'>Nuestros sitios</h1>
         <div className='sides-cards-container'>
           <div className="side-example-card">
-            <img src="../src/assets/imagenes/SIEMPREPATAS.PE.png" alt="" />
+            <img src="../public/SIEMPREPATAS.PE.png" alt="" />
             <p className='side-example-p'>Siempre Patas - Crematorio de Mascotas</p>
             <p className='side-example-link'>Visitar web: <strong>siemprepatas.pe</strong> </p>
           </div>
           <div className="side-example-card">
-            <img src="../src/assets/imagenes/NADEFSTUDIO.png" alt="" />
+            <img src="../public/NADEFSTUDIO.png" alt="" />
             <p className='side-example-p'>NADEF Studio - Agencia de contenido Audiovisual</p>
             <p className='side-example-link'>Visitar web: <strong>nadefstudio.tusitio.com.pe</strong></p>
           </div>
           <div className="side-example-card">
-            <img src="../src/assets/imagenes/STILOSRAQUEL.png" alt="" />
+            <img src="../public/STILOSRAQUEL.png" alt="" />
             <p className='side-example-p'>Stilo´s Raquel - Salón de Belleza</p>
             <p className='side-example-link'><strong>stilosraquel.tusitio.com.pe</strong></p>
           </div>
           <div className="side-example-card">
-            <img src="../src/assets/imagenes/KEILAVILELA.png" alt="" />
+            <img src="../public/KEILAVILELA.png" alt="" />
             <p className='side-example-p'>Keila Vilela - Interprete de Lengua de Señas Peruana</p>
             <p className='side-example-link'>Visitar web: <strong>keilalsp.tusitio.com.pe</strong></p>
           </div>
@@ -188,7 +188,7 @@ function App() {
       <footer className='footer'>
         <div className='footer-one'>
           <div className='footer-logo'>
-            <img src="../src/assets/imagenes/LOGO.svg" alt="" />
+            <img src="../public/LOGO.svg" alt="" />
             <p>tusitio.com.pe</p>
           </div>
           <p>Planes y precios</p>
