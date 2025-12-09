@@ -17,6 +17,13 @@ useEffect(() => {
     const distance = end - start;
     let startTime = null;
 
+    const ease = (t, b, c, d) => {
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t + b;
+      t--;
+      return (-c / 2) * (t * (t - 2) - 1) + b;
+    };
+
     const animation = (currentTime) => {
       if (!startTime) startTime = currentTime;
       const timeElapsed = currentTime - startTime;
@@ -24,14 +31,6 @@ useEffect(() => {
       window.scrollTo(0, run);
 
       if (timeElapsed < duration) requestAnimationFrame(animation);
-    };
-
-    // curva de aceleración/desaceleración
-    const ease = (t, b, c, d) => {
-      t /= d / 2;
-      if (t < 1) return (c / 2) * t * t + b;
-      t--;
-      return (-c / 2) * (t * (t - 2) - 1) + b;
     };
 
     requestAnimationFrame(animation);
@@ -44,11 +43,12 @@ useEffect(() => {
       e.preventDefault();
       const target = document.querySelector(this.getAttribute("href"));
       if (target) {
-        smoothScrollTo(target, 1200); // 1200ms = más lento, cámbialo a gusto
+        smoothScrollTo(target, 1200); // velocidad
       }
     });
   });
 }, []);
+
 
 
     return () => {
