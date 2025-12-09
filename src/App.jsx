@@ -5,6 +5,7 @@ import Patas from "./assets/imagenes/SIEMPREPATAS.PE.png";
 import Nadef from "./assets/imagenes/NADEFSTUDIO.png";
 import Raquel from "./assets/imagenes/STILOSRAQUEL.png";
 import Vilela from "./assets/imagenes/KEILAVILELA.png";
+import Logoblanco from "./assets/imagenes/logoblanco.svg";
 
 function App() {
   return (
