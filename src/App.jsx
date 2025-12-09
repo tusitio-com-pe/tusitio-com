@@ -216,7 +216,7 @@ function App() {
           <p>Web estática</p>
         </div>
         <div className='footer-four'>
-          <p className='ultimate-p'>©EZKALA Copyright 2026 tusitio.com.pe</p>
+          <p className='ultimate-p'>© EZKALA Copyright 2026 tusitio.com.pe</p>
         </div>
       </footer>
     </>
