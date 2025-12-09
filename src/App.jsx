@@ -10,18 +10,46 @@ import Logoblanco from "./assets/imagenes/logoblanco.svg";
 
 function App() {
 
-  useEffect(() => {
-    const links = document.querySelectorAll('a[href^="#"]');
+useEffect(() => {
+  const smoothScrollTo = (target, duration = 800) => {
+    const start = window.pageYOffset;
+    const end = target.offsetTop;
+    const distance = end - start;
+    let startTime = null;
 
-    links.forEach(link => {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
-        if (target) {
-          target.scrollIntoView({ behavior: "smooth" });
-        }
-      });
+    const animation = (currentTime) => {
+      if (!startTime) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const run = ease(timeElapsed, start, distance, duration);
+      window.scrollTo(0, run);
+
+      if (timeElapsed < duration) requestAnimationFrame(animation);
+    };
+
+    // curva de aceleración/desaceleración
+    const ease = (t, b, c, d) => {
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t + b;
+      t--;
+      return (-c / 2) * (t * (t - 2) - 1) + b;
+    };
+
+    requestAnimationFrame(animation);
+  };
+
+  const links = document.querySelectorAll('a[href^="#"]');
+
+  links.forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        smoothScrollTo(target, 1200); // 1200ms = más lento, cámbialo a gusto
+      }
     });
+  });
+}, []);
+
 
     return () => {
       links.forEach(link => {
