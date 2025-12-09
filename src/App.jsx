@@ -43,7 +43,7 @@ function App() {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute("href"));
         if (target) {
-          smoothScrollTo(target, 120);
+          smoothScrollTo(target, 2000);
         }
       });
     });
