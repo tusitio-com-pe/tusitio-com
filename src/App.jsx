@@ -16,7 +16,7 @@ function App() {
           <p>tusitio.com.pe</p>
         </div>
         <nav className='links'>
-          <li><a href='/'>Plan</a></li>
+          <li><a href='/'>Planes</a></li>
           <li><a href='/'>Sobre nosotros</a></li>
           <li><a href='/'>Nuestros Sitios</a></li>
           <li className='link-black' ><a href='/'>Empieza ahora</a></li>
