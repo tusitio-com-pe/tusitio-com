@@ -16,9 +16,9 @@ function App() {
           <p>tusitio.com.pe</p>
         </div>
         <nav className='links'>
-          <li><a href='/'>Precios</a></li>
+          <li><a href='/'>Plan</a></li>
           <li><a href='/'>Sobre nosotros</a></li>
-          <li><a href='/'>Casos de Éxito</a></li>
+          <li><a href='/'>Nuestros Sitios</a></li>
           <li className='link-black' ><a href='/'>Empieza ahora</a></li>
         </nav>
       </header>
@@ -166,7 +166,7 @@ function App() {
         </article>
       </section>
 
-      <article className='our-sides'>
+      <article className='our-sites'>
         <h1 className='our-sides-title'>Nuestros sitios</h1>
         <div className='sides-cards-container'>
           <div className="side-example-card">
