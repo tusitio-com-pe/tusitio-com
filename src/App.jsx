@@ -48,7 +48,6 @@ function App() {
         </nav>
       </header>
 
-
       <footer className='footer'>
         <div className='footer-one'>
           <div className='footer-logo'>
