@@ -35,7 +35,7 @@ function App() {
         </div>
 
         <div className='big-image'>
-          <img src="../public/portada.png" alt="imagen de portada" />
+          <img src="/public/portada.png" alt="imagen de portada" />
         </div>
       </main>
 
