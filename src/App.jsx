@@ -29,7 +29,6 @@ function App() {
       });
     };
   }, []);
-  // -----------------------
 
   return (
     <>
@@ -38,18 +37,17 @@ function App() {
           <img src={Logo} alt="Logo tu sitio" />
           <p>tusitio.com.pe</p>
         </div>
+
         <nav className='links'>
-        <ul>
-          <li><a href="#planes">Plan</a></li>
-          <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
-          <li><a href="#nuestros-sitios">Nuestros sitios</a></li>
-          <li className='link-black'><a href="#planes">Empieza ahora</a></li>
-        <ul>
+          <ul>
+            <li><a href="#planes">Plan</a></li>
+            <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+            <li><a href="#nuestros-sitios">Nuestros sitios</a></li>
+            <li className='link-black'><a href="#planes">Empieza ahora</a></li>
+          </ul>
         </nav>
       </header>
 
-      {/* TODO TU CONTENIDO SIGUE IGUAL */}
-      {/* ...no lo repito para que sea más corto... */}
 
       <footer className='footer'>
         <div className='footer-one'>
