@@ -166,7 +166,7 @@ function App() {
         </article>
       </section>
 
-      <article className='our-sites' id="nuestros-sitios">
+      <article className='our-sides' id="nuestros-sitios">
         <h1 className='our-sides-title'>Nuestros sitios</h1>
         <div className='sides-cards-container'>
           <div className="side-example-card">
