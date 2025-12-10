@@ -94,13 +94,14 @@ function App() {
         <div className='about-one'>
           <div className='sub-about-one'>
             <h3>USAMOS SUBDOMINIOS</h3>
-            <p>Un subdominio es una extensión de un dominio principal <br /> que permite crear más sitios web sin necesidad de <br /> adquirir un nuevo dominio.</p>
+            <p>Un subdominio es una extensión de un dominio principal que permite crear más sitios web sin necesidad de adquirir un nuevo dominio.</p>
           </div>
           <p className='sub-domain'><strong>floreria.</strong>tusitio.com.pe</p>
         </div>
+
         <div className='about-two'>
           <h3>USAMOS UN HOSTING OPTIMIZADO</h3>
-          <p>Es un servicio que brindamos nosotros <br /> exclusivamente, consiste en brindar un Hosting <br /> ajustado al tamaño de una página en concreto.</p>
+          <p>Es un servicio que brindamos nosotros exclusivamente, consiste en brindar un Hosting ajustado al tamaño de una página en concreto.</p>
         </div>
       </article>
 
@@ -212,26 +213,31 @@ function App() {
       <article className='our-sides' id="nuestros-sitios">
         <h1 className='our-sides-title'>Nuestros sitios</h1>
         <div className='sides-cards-container'>
+
           <div className="side-example-card">
             <img src={Patas} alt="" />
             <p className='side-example-p'>Siempre Patas - Crematorio de Mascotas</p>
             <p className='side-example-link'>Visitar web: <strong>siemprepatas.pe</strong> </p>
           </div>
+
           <div className="side-example-card">
             <img src={Nadef} alt="" />
             <p className='side-example-p'>NADEF Studio - Agencia de contenido Audiovisual</p>
             <p className='side-example-link'>Visitar web: <strong>nadefstudio.tusitio.com.pe</strong></p>
           </div>
+
           <div className="side-example-card">
             <img src={Raquel} alt="" />
             <p className='side-example-p'>Stilo´s Raquel - Salón de Belleza</p>
             <p className='side-example-link'><strong>stilosraquel.tusitio.com.pe</strong></p>
           </div>
+
           <div className="side-example-card">
             <img src={Vilela} alt="" />
             <p className='side-example-p'>Keila Vilela - Interprete de Lengua de Señas Peruana</p>
             <p className='side-example-link'>Visitar web: <strong>keilalsp.tusitio.com.pe</strong></p>
           </div>
+          
         </div>
       </article>
 
