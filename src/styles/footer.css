@@ -1,0 +1,39 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000000;
+  color: white;
+  padding: 40px;
+  box-sizing: border-box;
+  text-align: start;
+}
+
+.footer-one {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-logo {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-logo img {
+  width: 20px;
+}
+
+.footer-two {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-three {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-four {
+  flex: 1;
+  padding: 10px;
+}
