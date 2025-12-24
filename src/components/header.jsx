@@ -41,10 +41,10 @@ export default function Header() {
                     <div className="right"></div>
                 </div>
                 <nav className='links-mobile'>
-                    <li><a href="#planes">Plan</a></li>
-                    <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
-                    <li><a href="#nuestros-sitios">Nuestros sitios</a></li>
-                    <li className='link-black' ><a href="#planes">Empieza ahora</a></li>
+                    <li><a onClick={()=>{openMobile(false)}}  href="#planes">Plan</a></li>
+                    <li><a onClick={()=>{openMobile(false)}} href="#sobre-nosotros">Sobre nosotros</a></li>
+                    <li><a onClick={()=>{openMobile(false)}} href="#nuestros-sitios">Nuestros sitios</a></li>
+                    <li className='link-black' ><a onClick={()=>{openMobile(false)}} href="#planes">Empieza ahora</a></li>
                 </nav>
             </section>
         </header>
