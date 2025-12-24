@@ -1,6 +1,7 @@
-import { useEffect } from "react";
+import {useEffect} from "react";
 import Header from "./components/header.jsx";
 import Footer from "./components/footer";
+import smoothScrollTo from "./utils/transition.js";
 import './App.css';
 import Portada from "./assets/imagenes/portada.png";
 import Patas from "./assets/imagenes/SIEMPREPATAS.PE.png";
@@ -11,31 +12,7 @@ import Vilela from "./assets/imagenes/KEILAVILELA.png";
 function App() {
 
   useEffect(() => {
-    const smoothScrollTo = (target, duration = 800) => {
-      const start = window.pageYOffset;
-      const end = target.offsetTop;
-      const distance = end - start;
-      let startTime = null;
-
-      const ease = (t, b, c, d) => {
-        t /= d / 2;
-        if (t < 1) return (c / 2) * t * t + b;
-        t--;
-        return (-c / 2) * (t * (t - 2) - 1) + b;
-      };
-
-      const animation = (currentTime) => {
-        if (!startTime) startTime = currentTime;
-        const timeElapsed = currentTime - startTime;
-        const run = ease(timeElapsed, start, distance, duration);
-        window.scrollTo(0, run);
-
-        if (timeElapsed < duration) requestAnimationFrame(animation);
-      };
-
-      requestAnimationFrame(animation);
-    };
-
+    const start = window.pageYOffset;
     const links = document.querySelectorAll('a[href^="#"]');
 
     links.forEach(link => {
@@ -43,7 +20,7 @@ function App() {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute("href"));
         if (target) {
-          smoothScrollTo(target, 1000);
+          smoothScrollTo(start, target, 1000);
         }
       });
     });
@@ -105,7 +82,7 @@ function App() {
             <p className='text_two'>¡AHORA TODOS</p>
             <p className='text_three'>LOS EMPRENDEDORES</p>
             <p className='text_four'>PUEDEN TENER SU SITIO WEB!</p>
-            <p className='text_five'>+1 CORREO CORPORATIVO GRATIS</p>
+            <p className='text_five'>+1 CORREO CORPORATIVOS GRATIS</p>
             <div className='mini-description-container'>
               <p>Desde</p>
               <p className='text_six'>S/.</p>
@@ -148,7 +125,7 @@ function App() {
               <p className='plan-mount'>99</p>
             </div>
             <button className='select-plan'>Elegir Plan</button>
-            <div>
+            <div className="list-details-plan-container">
               <ul className='detail-text'>
                 {detailsCard.map((e) => { return <li>{e}</li> })}
               </ul>
@@ -163,7 +140,7 @@ function App() {
               <p className='plan-mount'>199</p>
             </div>
             <button className='select-plan'>Elegir Plan</button>
-            <div>
+            <div className="list-details-plan-container">
               <ul className='detail-text'>
                 {detailsCard.map((e) => { return <li>{e}</li> })}
               </ul>
@@ -178,7 +155,7 @@ function App() {
               <p className='plan-mount'>299</p>
             </div>
             <button className='select-plan'>Elegir Plan</button>
-            <div>
+            <div className="list-details-plan-container">
               <ul className='detail-text'>
                 {detailsCard.map((e) => { return <li>{e}</li> })}
               </ul>
@@ -192,14 +169,14 @@ function App() {
         <h1 className='our-sides-title'>Nuestros sitios</h1>
         <div className='sides-cards-container'>
 
-          { pagesItems.map((e) => {
-              return (
-                <div className="side-example-card">
-                  <img src={e.pathImage} alt="" />
-                  <p className='side-example-p'>{e.description}</p>
-                  <p className='side-example-link'>Visitar web: <strong>{e.link}</strong> </p>
-                </div>
-              )
+          {pagesItems.map((e) => {
+            return (
+              <div key={e.description} className="side-example-card">
+                <img src={e.pathImage} alt="" />
+                <p className='side-example-p'>{e.description}</p>
+                <p className='side-example-link'>Visitar web: <strong>{e.link}</strong> </p>
+              </div>
+            )
           })}
 
         </div>

@@ -1,7 +1,23 @@
 import Logo from "../assets/imagenes/LOGO.svg";
 import "../styles/header.css";
+import { useState } from "react";
 
 export default function Header() {
+    const [open, setOpen] = useState(false);
+
+    function openMobile(value) {
+        if (window.innerWidth > 500) {
+            return;
+        }
+        setOpen(value);
+        let body = document.querySelector('body');
+        if (value) {
+            body.classList.add('prevent-scroll');
+        } else {
+            body.classList.remove('prevent-scroll');
+        }
+    }
+
     return (
         <header className='header_main'>
             <div className='container_logo'>
@@ -14,6 +30,23 @@ export default function Header() {
                 <li><a href="#nuestros-sitios">Nuestros sitios</a></li>
                 <li className='link-black' ><a href="#planes">Empieza ahora</a></li>
             </nav>
+            <div className="menu" onClick={() => openMobile(true)}>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <section className={`menu-navbar-mobile ${open ? "" : "toLeft"}`}>
+                <div className="close-menu-mobile" onClick={() => { openMobile(false) }}>
+                    <div className="left"></div>
+                    <div className="right"></div>
+                </div>
+                <nav className='links-mobile'>
+                    <li><a href="#planes">Plan</a></li>
+                    <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+                    <li><a href="#nuestros-sitios">Nuestros sitios</a></li>
+                    <li className='link-black' ><a href="#planes">Empieza ahora</a></li>
+                </nav>
+            </section>
         </header>
     )
 };
