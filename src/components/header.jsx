@@ -19,21 +19,26 @@ export default function Header() {
     }
 
     return (
-        <header className='header_main'>
-            <div className='container_logo'>
-                <img src={Logo} alt="Logo tu sitio" />
-                <p>tusitio.com.pe</p>
-            </div>
-            <nav className='links'>
-                <li><a href="#planes">Plan</a></li>
-                <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
-                <li><a href="#nuestros-sitios">Nuestros sitios</a></li>
-                <li className='link-black' ><a href="#planes">Empieza ahora</a></li>
-            </nav>
-            <div className="menu" onClick={() => openMobile(true)}>
-                <div></div>
-                <div></div>
-                <div></div>
+        <>
+            <header className='header_main'>
+                <div className='container_logo'>
+                    <img src={Logo} alt="Logo tu sitio" />
+                    <p>tusitio.com.pe</p>
+                </div>
+                <nav className='links'>
+                    <li><a href="#planes">Plan</a></li>
+                    <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+                    <li><a href="#nuestros-sitios">Nuestros sitios</a></li>
+                    <li className='link-black' ><a href="#planes">Empieza ahora</a></li>
+                </nav>
+                <div className="menu" onClick={() => openMobile(true)}>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+            </header>
+            <div className={`shadow ${open ? "" : "toLeft"}`}>
             </div>
             <section className={`menu-navbar-mobile ${open ? "" : "toLeft"}`}>
                 <div className="close-menu-mobile" onClick={() => { openMobile(false) }}>
@@ -41,12 +46,15 @@ export default function Header() {
                     <div className="right"></div>
                 </div>
                 <nav className='links-mobile'>
-                    <li><a onClick={()=>{openMobile(false)}}  href="#planes">Plan</a></li>
-                    <li><a onClick={()=>{openMobile(false)}} href="#sobre-nosotros">Sobre nosotros</a></li>
-                    <li><a onClick={()=>{openMobile(false)}} href="#nuestros-sitios">Nuestros sitios</a></li>
-                    <li className='link-black' ><a onClick={()=>{openMobile(false)}} href="#planes">Empieza ahora</a></li>
+                    <li><a onClick={() => { openMobile(false) }} href="#planes">Plan</a></li>
+                    <span className="divisor-menu-mobile"></span>
+                    <li><a onClick={() => { openMobile(false) }} href="#sobre-nosotros">Sobre nosotros</a></li>
+                    <span className="divisor-menu-mobile"></span>
+                    <li><a onClick={() => { openMobile(false) }} href="#nuestros-sitios">Nuestros sitios</a></li>
+                    <span className="divisor-menu-mobile"></span>
+                    <li className='link-black' ><a onClick={() => { openMobile(false) }} href="#planes">Empieza ahora</a></li>
                 </nav>
             </section>
-        </header>
+        </>
     )
 };

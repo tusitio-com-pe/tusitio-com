@@ -1,11 +1,14 @@
 .header_main {
-  background-color: #ffffff;
+  width: 100%;
+  height: 80px;
+  background-color: #f2f2f2;  
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 120px;
   padding: 10px 30px;
   gap: 30px;
+  position: fixed;
+  z-index: 5;
 }
 
 .container_logo {
@@ -60,7 +63,7 @@
 .close-menu-mobile div {
   width: 10px;
   height: 40px;
-  background-color: rgb(0, 0, 0);
+  background-color: #fff;
   position: absolute;
   border-radius: 5px;
 }
@@ -76,33 +79,48 @@
   right: 34px;
   transform: rotate(-45deg)
 }
+.shadow {
+  width: 100%;
+  height: 100%;
+  background-color: #3131317a;
+  position: absolute;
+  z-index: 6;
+  top: 0;
+  right: 0;
+}
 
 .menu-navbar-mobile {
   position: absolute;
   height: 100%;
-  width: 100%;
-  background-color: #ffffff;
-  z-index: 2;
+  width: 80%;
+  background-color: #242424;
+  padding: 30px;
+  z-index: 7;
   top: 0;
-  left: 0;
+  right: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: start;
   transition: 1s;
 }
 
 .links-mobile {
-  height: 70%;
+  width: 100%;
+  height: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 15px;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 10px;
 }
 
 .links-mobile li {
   list-style: none;
   font-size: 25px;
+}
+
+.links-mobile li a {
+  color: white;
 }
 
 .links-mobile .link-black {
@@ -115,8 +133,14 @@
   color: white;
 }
 
+.divisor-menu-mobile {
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+}
+
 .toLeft {
-  transform: translateX(-107%);
+  transform: translateX(100%);
 }
 
 .prevent-scroll {
@@ -130,7 +154,6 @@
   .header_main {
     flex-direction: row;
     justify-content: space-between;
-    height: 80px;
     padding: 10px 10%;
   }
 }
