@@ -52,7 +52,7 @@ function App() {
     {
       pathImage: Patas,
       description: "Siempre Patas - Crematorio de Mascotas",
-      link: "siemprepatas.pe",
+      link: "https://siemprepatas.pe",
     },
     {
       pathImage: Nadef,
