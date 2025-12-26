@@ -6,9 +6,8 @@ export default function Header() {
     const [open, setOpen] = useState(false);
 
     function openMobile(value) {
-        if (window.innerWidth > 500) {
-            return;
-        }
+        console.log(value);
+        if (window.innerWidth > 500) return;
         setOpen(value);
         let body = document.querySelector('body');
         if (value) {
@@ -21,7 +20,7 @@ export default function Header() {
 
     return (
         <>
-            <header className='header_main'>
+            <header className='relative-header'>
                 <div className='container_logo'>
                     <img src={Logo} alt="Logo tu sitio" />
                     <p>tusitio.com.pe</p>
