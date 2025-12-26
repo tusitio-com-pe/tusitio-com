@@ -82,14 +82,14 @@ function App() {
             <p className='text_two'>¡AHORA TODOS</p>
             <p className='text_three'>LOS EMPRENDEDORES</p>
             <p className='text_four'>PUEDEN TENER SU SITIO WEB!</p>
-            <p className='text_five'>+1 CORREO CORPORATIVOS GRATIS</p>
+            <p className='text_five'>+ 1 CORREO CORPORATIVO GRATIS</p>
             <div className='mini-description-container'>
               <p>Desde</p>
               <p className='text_six'>S/.</p>
               <p className='text_seven'>99</p>
               <p>Pago Único</p>
             </div>
-            <div className='pseudo-button'><a href="/">VER OFERTA</a></div>
+            <div className='pseudo-button'><a href="#planes">VER OFERTA</a></div>
           </div>
         </div>
 
