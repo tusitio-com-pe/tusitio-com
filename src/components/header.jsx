@@ -16,7 +16,8 @@ export default function Header() {
         } else {
             body.classList.remove('prevent-scroll');
         }
-    }
+    };
+
 
     return (
         <>

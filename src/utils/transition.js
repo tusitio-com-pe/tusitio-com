@@ -1,5 +1,5 @@
 const smoothScrollTo = (start, target, duration = 800) => {
-    const end = target.offsetTop;
+    const end = target.offsetTop - 80;
     const distance = end - start;
     let startTime = null;
 

@@ -1,16 +1,10 @@
-#root {
-  text-align: center;
-  width: 100%;
-  height: 100%;
-}
-
 .firts-container {
   background-color: black;
   color: white;
   display: flex;
   flex-direction: column;
   padding: 30px;
-  margin-top: 80px;
+  padding-top: 100px;
 }
 
 .sub_container {
@@ -110,6 +104,10 @@
 }
 
 /* ----------------------------------------------------------------------- */
+
+#sobre-nosotros {
+  scroll-margin-top: 80px;
+}
 
 .about-service {
   width: 100%;
@@ -322,7 +320,7 @@
 
 @media( min-width: 425px) {
   .firts-container {
-    padding: 40px 10%;
+    padding: 100px 10%;
   }
   .text_one {
     font-size: 20px;
