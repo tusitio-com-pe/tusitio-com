@@ -6,7 +6,6 @@ export default function Header() {
     const [open, setOpen] = useState(false);
 
     function openMobile(value) {
-        console.log(value);
         if (window.innerWidth > 500) return;
         setOpen(value);
         let body = document.querySelector('body');
