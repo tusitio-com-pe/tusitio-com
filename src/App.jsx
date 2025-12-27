@@ -3,7 +3,7 @@ import Header from "./components/header.jsx";
 import Footer from "./components/footer";
 import smoothScrollTo from "./utils/transition.js";
 import './App.css';
-import Portada from "./assets/imagenes/portada.png";
+import Portada from "./assets/imagenes/hero.webp";
 import Patas from "./assets/imagenes/SIEMPREPATAS.PE.png";
 import Nadef from "./assets/imagenes/NADEFSTUDIO.png";
 import Raquel from "./assets/imagenes/STILOSRAQUEL.png";
@@ -53,7 +53,7 @@ function App() {
     {
       pathImage: Patas,
       description: "Siempre Patas - Crematorio de Mascotas",
-      link: "siemprepatas.pe",
+      link: "https://siemprepatas.pe",
     },
     {
       pathImage: Nadef,
@@ -83,14 +83,14 @@ function App() {
             <p className='text_two'>¡AHORA TODOS</p>
             <p className='text_three'>LOS EMPRENDEDORES</p>
             <p className='text_four'>PUEDEN TENER SU SITIO WEB!</p>
-            <p className='text_five'>+1 CORREO CORPORATIVOS GRATIS</p>
+            <p className='text_five'>+ 1 CORREO CORPORATIVO GRATIS</p>
             <div className='mini-description-container'>
               <p>Desde</p>
               <p className='text_six'>S/.</p>
               <p className='text_seven'>99</p>
               <p>Pago Único</p>
             </div>
-            <div className='pseudo-button'><a href="/">VER OFERTA</a></div>
+            <div className='pseudo-button'><a href="#planes">VER OFERTA</a></div>
           </div>
         </div>
 
