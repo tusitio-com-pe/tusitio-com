@@ -6,14 +6,11 @@ export default function Header() {
     const [open, setOpen] = useState(false);
 
     function openMobile(value) {
-        if (window.innerWidth > 500) return;
+        if (window.innerWidth > 575) return;
         setOpen(value);
         let body = document.querySelector('body');
-        if (value) {
-            body.classList.add('prevent-scroll');
-        } else {
-            body.classList.remove('prevent-scroll');
-        }
+        if (value) body.classList.add('prevent-scroll');
+        else body.classList.remove('prevent-scroll');
     };
 
 
@@ -37,9 +34,9 @@ export default function Header() {
                 </div>
 
             </header>
-            <div className={`shadow ${open ? "" : "toLeft"}`}>
+            <div className={`shadow ${open ? "toInit" : "toRight"}`}>
             </div>
-            <section className={`menu-navbar-mobile ${open ? "" : "toLeft"}`}>
+            <section className={`menu-navbar-mobile ${open ? "toInit" : "toRight"}`}>
                 <div className="close-menu-mobile" onClick={() => { openMobile(false) }}>
                     <div className="left"></div>
                     <div className="right"></div>

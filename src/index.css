@@ -17,7 +17,6 @@ body {
   font-style: normal;
   line-height: 1.5;
   color: var(--color-text);
-  background-color: var(--color-background);
   min-width: 320px;
   min-height: 100vh;
   text-align: center;
@@ -31,9 +30,11 @@ main {
   /* Colors */
   --color-primary: #000000;
   --color-primary-hover: #353535;
-  --color-secondary: #64748b;
-  --color-background: #ffffff;
-  --color-text: #0f172a;
+  --color-secondary: #ffffff;
+  --color-tertiary: #272727;
+  --color-background: #000000;
+  --color-text: #000000;
+  --color-text-secondary: #ffffff;
 
   /* Spacing */
   --space-xs: 0.25rem;
@@ -59,6 +60,7 @@ input,
 textarea,
 select {
   font: inherit;
+  cursor: pointer;
 }
 
 a {
@@ -81,12 +83,10 @@ h3 { font-size: 1.5rem; }
 
 button {
   font: inherit;
-  padding: 0.6em 1.2em;
   border-radius: 8px;
   border: 1px solid transparent;
-  cursor: pointer;
   background-color: var(--color-primary);
-  color: #fff;
+  color: var(--color-text-secondary);
   transition: background-color 0.2s, border-color 0.2s;
 }
 

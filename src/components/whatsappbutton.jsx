@@ -1,10 +1,11 @@
 "use client";
+import { Suspense } from "react";
 import config from "../constants/config.js";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 export default function WhatsappButton() {
   return (
-
+    <Suspense>
       <FloatingWhatsApp
         statusMessage="Activo recientemente"
         className="ws-button"
@@ -16,5 +17,6 @@ export default function WhatsappButton() {
         phoneNumber={config.contactPhone}
         accountName={config.siteName}
       />
+    </Suspense>
   );
 }
