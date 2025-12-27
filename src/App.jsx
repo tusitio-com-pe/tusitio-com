@@ -3,7 +3,7 @@ import Header from "./components/header.jsx";
 import Footer from "./components/footer";
 import smoothScrollTo from "./utils/transition.js";
 import './App.css';
-import Portada from "./assets/imagenes/portada.png";
+import Portada from "./assets/imagenes/hero.webp";
 import Patas from "./assets/imagenes/SIEMPREPATAS.PE.png";
 import Nadef from "./assets/imagenes/NADEFSTUDIO.png";
 import Raquel from "./assets/imagenes/STILOSRAQUEL.png";
