@@ -8,6 +8,7 @@ import Patas from "./assets/imagenes/SIEMPREPATAS.PE.png";
 import Nadef from "./assets/imagenes/NADEFSTUDIO.png";
 import Raquel from "./assets/imagenes/STILOSRAQUEL.png";
 import Vilela from "./assets/imagenes/KEILAVILELA.png";
+import WhatsappButton from "./components/whatsappbutton.jsx";
 
 function App() {
 
@@ -181,7 +182,7 @@ function App() {
 
         </div>
       </article>
-
+      <WhatsappButton/>
       <Footer />
     </>
   )
